@@ -1,4 +1,4 @@
 from django.db import models
 
 class Retailer(models.Model):
-    retailerName = models.CharField(max_length=50)
+    retailer_name = models.CharField(max_length=50)
