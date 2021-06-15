@@ -1,0 +1,464 @@
+[
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 1,
+        "fields": {
+            "pieceName":"Project WE Pride Tee by Edward Granger",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 9.99,
+            "retailer": 1,
+            "category": 1
+            
+        }
+    },
+
+    {
+        
+            "model": "alinasclosetapi.piece",
+            "pk": 2,
+            "fields": {
+                "pieceName":"Pop-Culture Graphic Tie-Front Tee",
+                "size": "4T",
+                "imageUrl": "",
+                "price": 14.00,
+                "retailer": 1,
+                "category": 1
+                               
+            }
+    },
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 3,
+        "fields": {
+            "pieceName":"Drop-Shoulder Graphic Hi-Lo Tee",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 6.97,
+            "retailer": 1,
+            "category": 1
+            
+        }
+    },
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 4,
+        "fields": {
+            "pieceName":"Unisex RUN DMC© Graphic Long-Sleeve Tee",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 14.99,
+            "retailer": 1,
+            "category": 1
+            
+        }
+    },
+    
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 5,
+        "fields": {
+            "pieceName":"Tulle Tutu Skirt",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 10.00,
+            "retailer": 1,
+            "category": 2
+            
+        }
+    },
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 6,
+        "fields": {
+            "pieceName":"Dark-Wash Jean Shorts",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 16.99,
+            "retailer": 1,
+            "category": 2
+            
+        }
+    },
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 7,
+        "fields": {
+            "pieceName":"Full-Length Jersey Leggings",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 5.00,
+            "retailer": 1,
+            "category": 2
+            
+        }
+    },
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 8,
+        "fields": {
+            "pieceName":"Ballerina Built-In Tough Frayed-Hem Dark-Wash Jeggings",
+            "size": "5T",
+            "imageUrl": "",
+            "price": 24.99,
+            "retailer": 1,
+            "category": 2
+            
+        }
+    },
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 9,
+        "fields": {
+            "pieceName":"Sleeveless Swing Tunic and Leggings Set",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 22.99,
+            "retailer": 1,
+            "category": 3
+            
+        }
+    },
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 10,
+        "fields": {
+            "pieceName":"Dobby Tie-Shoulder Cami Top & Shorts Set",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 24.99,
+            "retailer": 1,
+            "category": 3
+            
+        }
+    },
+
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 11,
+        "fields": {
+            "pieceName":"Unisex Short-Sleeve One-Piece",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 19.99,
+            "retailer": 1,
+            "category": 3
+            
+        }
+    },
+    
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 12,
+        "fields": {
+            "pieceName":"Printed Jersey Jumpsuit",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 8.99,
+            "retailer": 1,
+            "category": 3
+            
+        }
+    },
+
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 13,
+        "fields": {
+            "pieceName":"Sparkle Tank Top - Cat & Jack",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 4.00,
+            "retailer": 2,
+            "category": 1
+            
+        }
+    },
+
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 14,
+        "fields": {
+            "pieceName":"Goumikids Organic Cotton Knit Hoodie",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 36.00,
+            "retailer": 2,
+            "category": 1
+            
+        }
+    },
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 15,
+        "fields": {
+            "pieceName":"Hope & Henry Woven Short Sleeve Button Down Shirt w/Tie Front",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 23.99,
+            "retailer": 2,
+            "category": 1
+            
+        }
+    },
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 16,
+        "fields": {
+            "pieceName":"Skinny Jeans - Cat & Jack™ - White",
+            "size": "5T",
+            "imageUrl": "",
+            "price": 10.00,
+            "retailer": 2,
+            "category": 2
+            
+        }
+    },
+
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 17,
+        "fields": {
+            "pieceName":"French Terry Jogger Pants - Cat & Jack™",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 8.00,
+            "retailer": 2,
+            "category": 2
+            
+        }
+    },
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 18,
+        "fields": {
+            "pieceName":"Hope & Henry Straight Cut Denim Jean - Medium Wash",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 24.99,
+            "retailer": 2,
+            "category": 2
+            
+        }
+    },
+
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 19,
+        "fields": {
+            "pieceName":"2pc Striped Ruffle Top & Skirtall Set - art class™ - Purple",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 18.00,
+            "retailer": 2,
+            "category": 3
+            
+        }
+    },
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 20,
+        "fields": {
+            "pieceName":"Yoga Sprout Cotton Hoodie, Tee Top, and Pant, Ikat Elephant",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 20.99,
+            "retailer": 2,
+            "category": 3
+            
+        }
+    },
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 21,
+        "fields": {
+            "pieceName":"Levi's® Toddler Knit Graphic Top & Shorts Set - Light Gray",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 21.99,
+            "retailer": 2,
+            "category": 3
+            
+        }
+    },
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 22,
+        "fields": {
+            "pieceName":"Levi's® Toddler Knit Graphic Top & Shorts Set - Light Gray",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 21.99,
+            "retailer": 3,
+            "category": 1
+            
+        }
+    },
+
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 22,
+        "fields": {
+            "pieceName":"Pocket Jersey Tee - White",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 14.00,
+            "retailer": 3,
+            "category": 1
+            
+        }
+    }, 
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 23,
+        "fields": {
+            "pieceName":"Uniform Pique Polo - Maroon",
+            "size": "4",
+            "imageUrl": "",
+            "price": 7.00,
+            "retailer": 3,
+            "category": 1
+            
+        }
+    }, 
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 24,
+        "fields": {
+            "pieceName":"Uniform Pique Polo - White",
+            "size": "4",
+            "imageUrl": "",
+            "price": 7.00,
+            "retailer": 3,
+            "category": 1
+            
+        }
+    }, 
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 24,
+        "fields": {
+            "pieceName":"Uniform Pique Polo - White",
+            "size": "4",
+            "imageUrl": "",
+            "price": 7.00,
+            "retailer": 3,
+            "category": 1
+            
+        }
+    }, 
+
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 25,
+        "fields": {
+            "pieceName":"Ponte Uniform Pants - Khaki",
+            "size": "4",
+            "imageUrl": "",
+            "price": 14.00,
+            "retailer": 3,
+            "category": 2
+            
+        }
+    }, 
+
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 26,
+        "fields": {
+            "pieceName":"Uniform Chinos - Navy",
+            "size": "4",
+            "imageUrl": "",
+            "price": 17.00,
+            "retailer": 3,
+            "category": 2
+            
+        }
+    }, 
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 27,
+        "fields": {
+            "pieceName":"Uniform Chinos - Navy",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 10.00,
+            "retailer": 3,
+            "category": 2
+            
+        }
+    }, 
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 28,
+        "fields": {
+            "pieceName":"2-Piece Tie-Dye Tank & Bike Short Set",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 12.00,
+            "retailer": 3,
+            "category": 3
+            
+        }
+    }, 
+
+    
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 29,
+        "fields": {
+            "pieceName":"2-Piece Jersey Tee & Pull-On Pant Set",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 10.49,
+            "retailer": 3,
+            "category": 3
+            
+        }
+    }, 
+    
+
+    {
+        "model": "alinasclosetapi.piece",
+        "pk": 30,
+        "fields": {
+            "pieceName":"2-Piece Tee & Jumper Set",
+            "size": "4T",
+            "imageUrl": "",
+            "price": 11.19,
+            "retailer": 3,
+            "category": 3
+            
+        }
+    }
+    
+
+
+]

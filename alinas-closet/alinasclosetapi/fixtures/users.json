@@ -1,0 +1,13 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "first_name": "Snoh",
+            "last_name": "Aalegra",
+            "email": "me@me.com",
+            "password": "alina0723!"
+        
+        }
+    }
+]
