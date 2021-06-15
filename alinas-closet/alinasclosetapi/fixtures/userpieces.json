@@ -1,6 +1,6 @@
 [
     {
-        "model": "alinasclosetapi.user_piece",
+        "model": "alinasclosetapi.userpiece",
         "pk": 1,
         "fields": {
             "is_favorite": "False",
@@ -16,7 +16,7 @@
 
     {
         
-            "model": "alinasclosetapi.user_piece",
+            "model": "alinasclosetapi.userpiece",
             "pk": 2,
             "fields": {
                 "is_favorite": "False",
