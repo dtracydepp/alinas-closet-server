@@ -6,4 +6,4 @@ class Piece(models.Model):
     imageurl =  models.ImageField(upload_to=None, height_field=None, width_field=None, max_length=100)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     retailer =  models.ForeignKey("Retailer", on_delete=models.CASCADE)
-    category_name =  models.ForeignKey("Category", on_delete=models.CASCADE)
+    category =  models.ForeignKey("Category", on_delete=models.CASCADE)
