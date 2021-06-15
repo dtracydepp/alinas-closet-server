@@ -3,7 +3,7 @@
         "model": "alinasclosetapi.look",
         "pk": 1,
         "fields": {
-            "lookName": "4th of July",
+            "look_name": "4th of July",
             "note": ""
             
         }
@@ -14,7 +14,7 @@
             "model": "alinasclosetapi.look",
             "pk": 2,
             "fields": {
-                "lookName": "Birthday Photoshoot",
+                "look_name": "Birthday Photoshoot",
                 "note": "My little fashionista!"
                 
             }

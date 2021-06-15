@@ -3,9 +3,9 @@
         "model": "alinasclosetapi.shopping_list",
         "pk": 1,
         "fields": {
-            "listName": "3rd Birthday",
+            "list_name": "3rd Birthday",
             "note": "",
-            "isFavorite": "False"
+            "is_favorite": "False"
             
         }
     },
@@ -15,9 +15,9 @@
             "model": "alinasclosetapi.shopping_list",
             "pk": 2,
             "fields": {
-                "listName": "July 4th",
+                "list_name": "July 4th",
                 "note": "",
-                "isFavorite": "False"       
+                "is_favorite": "False"       
                     
             }
     }

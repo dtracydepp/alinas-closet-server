@@ -3,7 +3,7 @@
         "model": "alinasclosetapi.retailer",
         "pk": 1,
         "fields": {
-            "retailerName": "Old Navy"
+            "retailer_name": "Old Navy"
             
         }
     },
@@ -13,7 +13,7 @@
             "model": "alinasclosetapi.retailer",
             "pk": 2,
             "fields": {
-                "retailerName": "Target"
+                "retailer_name": "Target"
                 
             }
     },
@@ -22,7 +22,7 @@
         "model": "alinasclosetapi.retailer",
         "pk": 3,
         "fields": {
-            "retailerName": "Carter's"
+            "retailer_name": "Carter's"
             
         }
     }

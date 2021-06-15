@@ -3,12 +3,12 @@
         "model": "alinasclosetapi.user_piece",
         "pk": 1,
         "fields": {
-            "isFavorite": "False",
+            "is_favorite": "False",
             "note": "Perfect!",
             "piece": 1,
             "user": 1,
             "look": 1,
-            "shoppingList": 1
+            "shopping_list": 1
         
             
         }
@@ -19,12 +19,12 @@
             "model": "alinasclosetapi.user_piece",
             "pk": 2,
             "fields": {
-                "isFavorite": "False",
+                "is_favorite": "False",
                 "note": "",
                 "piece": 2,
                 "user": 1,
                 "look": 2,
-                "shoppingList": 2
+                "shopping_list": 2
                 
             }
     }
