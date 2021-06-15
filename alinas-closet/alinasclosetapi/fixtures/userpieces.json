@@ -1,0 +1,33 @@
+[
+    {
+        "model": "alinasclosetapi.userpiece",
+        "pk": 1,
+        "fields": {
+            "is_favorite": "False",
+            "note": "Perfect!",
+            "piece": 1,
+            "user": 1,
+            "look": 1,
+            "shopping_list": 1
+        
+            
+        }
+    },
+
+    {
+        
+            "model": "alinasclosetapi.userpiece",
+            "pk": 2,
+            "fields": {
+                "is_favorite": "False",
+                "note": "",
+                "piece": 2,
+                "user": 1,
+                "look": 2,
+                "shopping_list": 2
+                
+            }
+    }
+
+    
+]

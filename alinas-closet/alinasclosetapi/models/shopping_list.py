@@ -1,6 +1,6 @@
 from django.db import models
 
 class ShoppingList(models.Model):
-    listName = models.CharField(max_length=50)
-    note = models.CharField(max_length=50)
-    isFavorite = models.BooleanField(default=False)
+    list_name = models.CharField(max_length=50)
+    note = models.CharField(max_length=250)
+    is_favorite = models.BooleanField(default=False)

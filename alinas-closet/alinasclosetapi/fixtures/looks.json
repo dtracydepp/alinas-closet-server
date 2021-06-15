@@ -1,0 +1,24 @@
+[
+    {
+        "model": "alinasclosetapi.look",
+        "pk": 1,
+        "fields": {
+            "look_name": "4th of July",
+            "note": ""
+            
+        }
+    },
+
+    {
+        
+            "model": "alinasclosetapi.look",
+            "pk": 2,
+            "fields": {
+                "look_name": "Birthday Photoshoot",
+                "note": "My little fashionista!"
+                
+            }
+    }
+
+    
+]

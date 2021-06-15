@@ -1,0 +1,29 @@
+[
+    {
+        "model": "alinasclosetapi.category",
+        "pk": 1,
+        "fields": {
+            "category_name": "Tops"
+            
+        }
+    },
+
+    {
+        
+            "model": "alinasclosetapi.category",
+            "pk": 2,
+            "fields": {
+                "category_name": "Bottoms"
+                
+            }
+    },
+
+    {
+        "model": "alinasclosetapi.category",
+        "pk": 3,
+        "fields": {
+            "category_name": "Sets"
+            
+        }
+    }
+]

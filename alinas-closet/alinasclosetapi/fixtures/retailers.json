@@ -1,0 +1,29 @@
+[
+    {
+        "model": "alinasclosetapi.retailer",
+        "pk": 1,
+        "fields": {
+            "retailer_name": "Old Navy"
+            
+        }
+    },
+
+    {
+        
+            "model": "alinasclosetapi.retailer",
+            "pk": 2,
+            "fields": {
+                "retailer_name": "Target"
+                
+            }
+    },
+
+    {
+        "model": "alinasclosetapi.retailer",
+        "pk": 3,
+        "fields": {
+            "retailer_name": "Carter's"
+            
+        }
+    }
+]
