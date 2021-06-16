@@ -14,14 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-from django.contrib import admin
 from django.conf.urls import include
 from django.urls import path
 from django.conf.urls import include
 from django.urls import path
 from rest_framework import routers
-from django.contrib import admin
-from alinasclosetapi.views import login_user
+from alinasclosetapi.views import login_user, register_user
 from alinasclosetapi.models.category import Category
 from alinasclosetapi.views.category import CategoryView
 from alinasclosetapi.views.piece import PieceView
@@ -35,5 +33,6 @@ router.register(r'categories', CategoryView, 'category')
 urlpatterns = [
     path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
     path('', include(router.urls)),
-    path('login', login_user)
+    path('login', login_user),
+    path('register', register_user)
 ]    
