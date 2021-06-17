@@ -32,6 +32,19 @@ class PieceView(ViewSet):
         return Response(serializer.data) 
 
 
+    def retrieve(self, request, pk=None):
+        """Handle GET requests for single piece
+        Returns:
+            Response -- JSON serialized game instance
+        """
+        try:
+            piece = Piece.objects.get(pk=pk)
+            serializer = PieceSerializer(piece, context={'request': request})
+            return Response(serializer.data)
+        except Exception as ex:
+            return HttpResponseServerError(ex)
+
+
 
 class PieceSerializer(serializers.ModelSerializer):
         """JSON serializer for pieces

@@ -28,6 +28,19 @@ class CategoryView(ViewSet):
             return HttpResponseServerError(ex)
 
     
+    def retrieve(self, request, pk=None):
+        """Handle GET requests for single category
+        Returns:
+            Response -- JSON serialized game instance
+        """
+        try:
+            category = Category.objects.get(pk=pk)
+            serializer = CategorySerializer(category, context={'request': request})
+            return Response(serializer.data)
+        except Exception as ex:
+            return HttpResponseServerError(ex)
+
+    
 
     def list(self, request):
         """Handle GET requests to categories resource
