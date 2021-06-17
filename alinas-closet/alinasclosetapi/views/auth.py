@@ -20,7 +20,7 @@ def login_user(request):
 
     # Use the built-in authenticate method to verify
     # authenticate returns the user object or None if no user is found
-    authenticated_user = authenticate(email=email, password=password)
+    authenticated_user = authenticate(username=email, password=password)
 
     # If authentication was successful, respond with their token
     if authenticated_user is not None:
