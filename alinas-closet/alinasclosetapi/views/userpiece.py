@@ -16,12 +16,12 @@ class UserPieceView(ViewSet):
         """
         # Get the current authenticated user
         user = User.objects.get(user=request.auth.user)
-        pieces = Piece.objects.filter(user=user)    
+        piece = Piece.objects.filter(user=user)    
 
          
 
         serializer = PieceSerializer(
-            pieces, many=True, context={'request': request})
+            piece, many=True, context={'request': request})
         return Response(serializer.data) 
 
 
