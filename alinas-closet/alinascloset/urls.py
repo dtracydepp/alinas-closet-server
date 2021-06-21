@@ -26,6 +26,7 @@ from alinasclosetapi.models.category import Category
 from alinasclosetapi.views.category import CategoryView
 from alinasclosetapi.views.piece import PieceView
 from alinasclosetapi.views.user import UserView
+from alinasclosetapi.views.userpiece import UserPieceView
 
 
 
@@ -33,6 +34,7 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'pieces', PieceView, 'piece')
 router.register(r'categories', CategoryView, 'category')
 router.register(r'users', UserView, 'user')
+router.register(r'userpieces', UserPieceView, 'userpiece')
 
 
 urlpatterns = [

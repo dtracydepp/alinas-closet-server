@@ -4,6 +4,8 @@ from rest_framework.authtoken.models import Token
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
+import json
+from django.http import HttpResponse
 
 
 
@@ -59,5 +61,5 @@ def register_user(request):
     # Use the REST Framework's token generator on the new user account
     token = Token.objects.create(user=new_user)
     # Return the token to the client
-    data = { 'token': token.key }
-    return Response(data)
+    data = json.dumps({"token": token.key})
+    return HttpResponse(data, content_type='application/json')
