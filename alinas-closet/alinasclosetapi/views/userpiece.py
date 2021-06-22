@@ -5,6 +5,8 @@ from rest_framework.decorators import action
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
+from django.http import HttpResponse
+from django.core.exceptions import ValidationError
 from alinasclosetapi.models import Piece
 
 
@@ -46,6 +48,42 @@ class UserPieceView(ViewSet):
             return HttpResponseServerError(ex)
 
 
+    def create(self, request):
+        """Handle POST operations
+        Returns:
+            Response -- JSON serialized piece instance
+        """
+
+        # Uses the token passed in the `Authorization` header
+        userpiece = UserPiece()
+
+        # Create a new Python instance of the Piece class
+        # and set its properties from what was sent in the
+        # body of the request from the client.
+        userpiece.piece = Piece.objects.get(pk=request.data["piece"])
+        userpiece.user = request.auth.user
+        userpiece.note = request.data.get("note", None)
+        userpiece.is_favorite = request.data["is_favorite"]
+        userpiece.look_id = request.data.get("look",None)
+        userpiece.shopping_list_id = request.data.get("shopping_list", None)
+        
+        
+
+        # Try to save the new piece to the database, then
+        # serialize the look instance as JSON, and send the
+        # JSON as a response to the client request
+        try:
+            userpiece.save()
+            serializer = PieceSerializer(userpiece, context={'request': request})
+            return Response(serializer.data)
+
+        # If anything went wrong, catch the exception and
+        # send a response with a 400 status code to tell the
+        # client that something was wrong with its request data
+        except ValidationError as ex:
+            return Response({"reason": ex.message}, status=status.HTTP_400_BAD_REQUEST)
+
+
     def destroy(self, request, pk=None):
         """Handle DELETE requests for a single userpiece
         Returns:
@@ -78,5 +116,10 @@ class UserPieceSerializer(serializers.ModelSerializer):
         Arguments:serializer type """
         class Meta:
             model = UserPiece
-            fields = ('id', 'note', 'is_favorite', 'piece','user','look','shopping_list')
+            fields = ('id', 'note', 'is_favorite', 'piece', 'user','look','shopping_list')
             depth = 1 
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['username','first_name', 'last_name', 'id']

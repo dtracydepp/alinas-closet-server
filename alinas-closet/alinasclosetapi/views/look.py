@@ -16,9 +16,7 @@ class LookView(ViewSet):
         Returns:
         Response -- JSON serialized list of look
         """
-        
-        user = User.objects.get(user=request.auth.user)  
-        look = Look.objects.all(user=user)
+        look = Look.objects.all()
 
          
         serializer = LookSerializer(

@@ -5,6 +5,7 @@ from rest_framework.decorators import action
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
+from django.http import HttpResponse
 
 
 
@@ -16,9 +17,7 @@ class ListView(ViewSet):
         Returns:
         Response -- JSON serialized list of userpieces
         """
-        
-        user = User.objects.get(user=request.auth.user)  
-        list = ShoppingList.objects.all(user=user)
+        list = ShoppingList.objects.all()
 
          
         serializer = ListSerializer(
