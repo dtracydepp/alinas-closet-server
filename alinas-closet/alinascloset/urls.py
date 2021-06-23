@@ -21,6 +21,7 @@ from django.urls import path
 from rest_framework import routers
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib import admin
 from alinasclosetapi.views import login_user, register_user
 from alinasclosetapi.views.piece import PieceView
 from alinasclosetapi.views.user import UserView
@@ -40,5 +41,6 @@ urlpatterns = [
     path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
     path('', include(router.urls)),
     path('login', login_user),
-    path('register', register_user)
+    path('register', register_user),
+    path('admin/', admin.site.urls),
 ]   + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

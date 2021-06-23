@@ -7,6 +7,7 @@ from rest_framework.response import Response
 from rest_framework import serializers
 from django.http import HttpResponse
 from django.core.exceptions import ValidationError
+from django.http import HttpResponseServerError
 from alinasclosetapi.models import Piece
 
 
@@ -74,7 +75,7 @@ class UserPieceView(ViewSet):
         # JSON as a response to the client request
         try:
             userpiece.save()
-            serializer = PieceSerializer(userpiece, context={'request': request})
+            serializer = UserPieceSerializer(userpiece, context={'request': request})
             return Response(serializer.data)
 
         # If anything went wrong, catch the exception and
@@ -109,12 +110,9 @@ class UserPieceView(ViewSet):
         """
         userpiece = UserPiece.objects.get(pk=pk)
         
-        userpiece.piece = Piece.objects.get(pk=request.data["piece"])
-        userpiece.user = request.auth.user
         userpiece.note = request.data.get("note", None)
-        userpiece.is_favorite = request.data["is_favorite"]
-        userpiece.look_id = request.data.get("look",None)
-        userpiece.shopping_list_id = request.data.get("shopping_list", None)
+        userpiece.is_favorite = request.data.get("is_favorite", None)
+        
         
 
         try:
