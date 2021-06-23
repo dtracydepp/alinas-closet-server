@@ -7,6 +7,7 @@ from rest_framework.response import Response
 from rest_framework import serializers
 from django.http import HttpResponse
 from django.core.exceptions import ValidationError
+from django.http import HttpResponseServerError
 from alinasclosetapi.models import Piece
 
 
@@ -74,7 +75,7 @@ class UserPieceView(ViewSet):
         # JSON as a response to the client request
         try:
             userpiece.save()
-            serializer = PieceSerializer(userpiece, context={'request': request})
+            serializer = UserPieceSerializer(userpiece, context={'request': request})
             return Response(serializer.data)
 
         # If anything went wrong, catch the exception and
@@ -100,6 +101,26 @@ class UserPieceView(ViewSet):
 
         except Exception as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+    def update(self, request, pk=None):
+        """Handle PUT requests for a userpiece
+        Returns:
+            Response -- Empty body with 204 status code
+        """
+        userpiece = UserPiece.objects.get(pk=pk)
+        
+        userpiece.note = request.data.get("note", None)
+        userpiece.is_favorite = request.data.get("is_favorite", None)
+        
+        
+
+        try:
+            userpiece.save()
+        except ValidationError as ex:
+            return Response({'reason': ex.message}, status=status.HTTP_400_BAD_REQUEST)
+
+        return Response({}, status=status.HTTP_204_NO_CONTENT)        
 
 
 
