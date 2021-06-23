@@ -102,6 +102,29 @@ class UserPieceView(ViewSet):
             return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
+    def update(self, request, pk=None):
+        """Handle PUT requests for a userpiece
+        Returns:
+            Response -- Empty body with 204 status code
+        """
+        userpiece = UserPiece.objects.get(pk=pk)
+        
+        userpiece.piece = Piece.objects.get(pk=request.data["piece"])
+        userpiece.user = request.auth.user
+        userpiece.note = request.data.get("note", None)
+        userpiece.is_favorite = request.data["is_favorite"]
+        userpiece.look_id = request.data.get("look",None)
+        userpiece.shopping_list_id = request.data.get("shopping_list", None)
+        
+
+        try:
+            userpiece.save()
+        except ValidationError as ex:
+            return Response({'reason': ex.message}, status=status.HTTP_400_BAD_REQUEST)
+
+        return Response({}, status=status.HTTP_204_NO_CONTENT)        
+
+
 
 class PieceSerializer(serializers.ModelSerializer):
         """JSON serializer for pieces

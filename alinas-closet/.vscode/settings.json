@@ -2,11 +2,6 @@
     "python.linting.pylintEnabled": true,
     "sqltools.connections": [
         {
-            "python.analysis.extraPaths": [
-                "./alinascloset"
-            ]
-        },
-        {
             "previewLimit": 50,
             "driver": "SQLite",
             "name": "ac-server",
