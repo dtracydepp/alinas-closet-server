@@ -19,7 +19,9 @@ class UserPieceView(ViewSet):
         Returns:
         Response -- JSON serialized list of userpieces
         """
+
         # Get the current authenticated user
+        # Left is variable , Right is ORM statement and request from client
         user = request.auth.user
         userpiece = UserPiece.objects.filter(user=user)   
         # piece = Piece.objects.filter() 
@@ -42,6 +44,8 @@ class UserPieceView(ViewSet):
             #   http://localhost:8000/userpieces/2
             #
             # The `2` at the end of the route becomes `pk`
+
+             # Left is variable , Right is ORM statement and request from client
             userpiece = UserPiece.objects.get(pk=pk)
             serializer = UserPieceSerializer(userpiece, context={'request': request})
             return Response(serializer.data)
@@ -55,12 +59,13 @@ class UserPieceView(ViewSet):
             Response -- JSON serialized piece instance
         """
 
-        # Uses the token passed in the `Authorization` header
+         # Left is variable , Right is ORM statement 
         userpiece = UserPiece()
 
         # Create a new Python instance of the Piece class
         # and set its properties from what was sent in the
         # body of the request from the client.
+         # Left is variable , Right is ORM statement and request from client and what will be created in database
         userpiece.piece = Piece.objects.get(pk=request.data["piece"])
         userpiece.user = request.auth.user
         userpiece.note = request.data.get("note", None)
@@ -108,6 +113,8 @@ class UserPieceView(ViewSet):
         Returns:
             Response -- Empty body with 204 status code
         """
+
+        # Left is variable , Right is ORM statement and request from client and what will be updated in the database.
         userpiece = UserPiece.objects.get(pk=pk)
         
         userpiece.note = request.data.get("note", None)
@@ -122,7 +129,7 @@ class UserPieceView(ViewSet):
 
         return Response({}, status=status.HTTP_204_NO_CONTENT)        
 
-
+# Serializers -- Specifies what fields on the Model should be converted to JSON in the response
 
 class PieceSerializer(serializers.ModelSerializer):
         """JSON serializer for pieces
