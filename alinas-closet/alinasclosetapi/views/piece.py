@@ -38,7 +38,7 @@ class PieceView(ViewSet):
     def retrieve(self, request, pk=None):
         """Handle GET requests for single piece
         Returns:
-            Response -- JSON serialized game instance
+            Response -- JSON serialized piece instance
         """
 
           # Left is variable , Right is ORM statement and request from client
