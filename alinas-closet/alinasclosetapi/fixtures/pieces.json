@@ -90,7 +90,7 @@
         "fields": {
             "piece_name":"Full-Length Jersey Leggings",
             "size": "4T",
-            "imageurl": "",
+            "imageurl": "alinasclosetapi/images/FullLengthJerseyLeggings.jpg",
             "price": 5.00,
             "retailer": 1,
             "category": 2
@@ -104,7 +104,7 @@
         "fields": {
             "piece_name":"Ballerina Built-In Tough Frayed-Hem Dark-Wash Jeggings",
             "size": "5T",
-            "imageurl": "",
+            "imageurl": "alinasclosetapi/images/BallerinaBuiltin.jpg",
             "price": 24.99,
             "retailer": 1,
             "category": 2
@@ -304,21 +304,6 @@
         "model": "alinasclosetapi.piece",
         "pk": 22,
         "fields": {
-            "piece_name":"Levi's® Toddler Knit Graphic Top & Shorts Set - Light Gray",
-            "size": "4T",
-            "imageurl": "",
-            "price": 21.99,
-            "retailer": 3,
-            "category": 1
-            
-        }
-    },
-
-
-    {
-        "model": "alinasclosetapi.piece",
-        "pk": 22,
-        "fields": {
             "piece_name":"Pocket Jersey Tee - White",
             "size": "4T",
             "imageurl": "",
@@ -334,20 +319,6 @@
         "pk": 23,
         "fields": {
             "piece_name":"Uniform Pique Polo - Maroon",
-            "size": "4",
-            "imageurl": "",
-            "price": 7.00,
-            "retailer": 3,
-            "category": 1
-            
-        }
-    }, 
-
-    {
-        "model": "alinasclosetapi.piece",
-        "pk": 24,
-        "fields": {
-            "piece_name":"Uniform Pique Polo - White",
             "size": "4",
             "imageurl": "",
             "price": 7.00,
@@ -405,7 +376,7 @@
         "model": "alinasclosetapi.piece",
         "pk": 27,
         "fields": {
-            "piece_name":"Uniform Chinos - Navy",
+            "piece_name":"Pull-On Cotton Shorts",
             "size": "4T",
             "imageurl": "",
             "price": 10.00,
