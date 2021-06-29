@@ -13,7 +13,7 @@ pylint-django = "*"
 django-environ = "*"
 gunicorn = "*"
 django-on-heroku = "*"
-
+environ = "*"
 [dev-packages]
 
 [requires]
