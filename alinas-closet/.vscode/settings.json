@@ -7,7 +7,8 @@
             "name": "ac-server",
             "database": "db.sqlite3"
         }
-    ]
+    ],
+    "python.pythonPath": "/home/tracyd/.local/share/virtualenvs/alinas-closet-server-Ii5mf50U/bin/python"
         
 }
 
